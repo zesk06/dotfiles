@@ -1,0 +1,7 @@
+---
+- name: fichier 02_user.yml
+  debug: msg="fichier 02_user.yml"
+- name: "change {{username}} shell to zsh"
+  user: 
+    name: "{{username}}"
+    shell: /bin/zsh

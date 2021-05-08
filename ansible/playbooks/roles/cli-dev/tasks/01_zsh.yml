@@ -1,0 +1,20 @@
+---
+- name: creates .local/share/fonts directory
+  file:
+    path: "~/.local/share/fonts"
+    state: directory
+
+- name: test if fc-cache exists
+  shell: "command -v fc-cache > /dev/null 2>&1"
+  register: fc_cache_exist
+  ignore_errors: yes
+
+- name: refresh font-cache
+  command: "fc-cache -f ~/.local/share/fonts"
+  when: fc_cache_exist.rc == 0
+
+- name: test if gconftool-2 exists
+  shell: "command -v gconftool-2 > /dev/null 2>&1"
+  register: gconftool2_exist
+  ignore_errors: yes
+

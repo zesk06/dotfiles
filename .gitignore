@@ -1,0 +1,9 @@
+*.swp
+*.retry
+tags
+dotfiles/i3/.config/nvim
+dotfiles/python/.ipython/profile_default/history.sqlite
+dotfiles/python/.ipython/profile_default/startup/
+dotfiles/i3/.config/yarn
+__pycache__
+.netrwhist

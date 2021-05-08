@@ -1,0 +1,12 @@
+
+snippet "function" "function" r
+" """ 
+function! ${0:MyFunction}()
+    ${1:echom "calling MyFunction"}
+endfunction
+
+nnoremap <leader>cm :call ${0:MyFunction}()<CR>
+" """ 
+endsnippet
+
+

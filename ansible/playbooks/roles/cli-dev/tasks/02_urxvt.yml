@@ -1,0 +1,5 @@
+---
+# A plugin to resize
+- git:
+    repo: "https://github.com/simmel/urxvt-resize-font"
+    dest: ~/.urxvt/ext/urxvt-resize-font

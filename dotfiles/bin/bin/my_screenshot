@@ -1,0 +1,7 @@
+#!/bin/bash
+# permet de faire un screenshot
+IMG=${HOME}/Pictures/screenshot_$(date +%s).png
+# maim -s  ${IMG}
+import "${IMG}"
+notify-send "${IMG} -> clipboard"
+echo ${IMG} | xclip 

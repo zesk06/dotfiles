@@ -1,0 +1,25 @@
+---
+# on va poser les fichier temporaires de vim/nvim dans ~/tmp
+# Il faut donc creer ce dossier
+- name: create ~/tmp
+  file:
+    dest: ~/tmp
+    state: directory
+  tags:
+    - vim
+
+# # NOW WE USE VIM-PLUGIN
+# # Pathogen permits to handle vim plugins
+# # Its must be enabled
+# - name: create pathogen
+#   file:
+#     path: "{{ item }}"
+#     state: directory
+#   with_items:
+#     - ~/.vim/autoload
+#     - ~/.vim/bundle
+#   tags:
+#     - vim
+
+
+

@@ -1,0 +1,17 @@
+###########################################################################
+#                            SNIPPET  SNIPPETS                            #
+###########################################################################
+priority -50
+
+snippet header "insert phony" b
+.PHONY := ${1:Target}
+$1
+endsnippet
+
+snippet toto "insert phony" b
+toto: # a toto target
+	echo "toto!"
+endsnippet
+
+
+# vim:ft=snippets:

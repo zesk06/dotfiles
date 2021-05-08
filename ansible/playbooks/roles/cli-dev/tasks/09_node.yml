@@ -1,0 +1,10 @@
+---
+
+- name: install yarn
+  # install yarn in ~/.local/bin/yarn
+  shell: npm -g install yarn
+  args:
+    creates: ~/.local/bin/yarn
+
+- name: install prettier
+  shell: yarn global add prettier

@@ -1,0 +1,10 @@
+---
+
+# install tmux plugin manager
+
+# - name: git clone TMUX PLUGINS
+#   git:
+#     repo: "https://github.com/tmux-plugins/tpm"
+#     dest: ~/.tmux/plugins/tpm
+#   tags:
+#     - tmux

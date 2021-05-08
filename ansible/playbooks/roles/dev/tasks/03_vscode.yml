@@ -1,0 +1,12 @@
+---
+- name: add vscode repo
+  copy:
+    src: vscode.repo
+    dest: /etc/yum.repos.d
+    owner: root
+    group: root
+
+- name: install vscode
+  yum: 
+    name: code
+    enablerepo: vscode

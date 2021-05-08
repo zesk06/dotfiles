@@ -1,0 +1,17 @@
+---
+# - name: test if code exists
+#   shell: "command -v code > /dev/null 2>&1"
+#   register: code_exist
+#   ignore_errors: yes
+# 
+# - name: Install VSCODE plugins
+#   command: "code --install-extension {{ item }}"
+#   args:
+#     creates: ~/.vscode/extensions/ms-python.python-*
+#   with_items:
+#     - ms-python.python
+#     - eamodio.gitlens
+#     - coenraads.bracket-pair-colorizer
+#     - editorconfig.editorconfig
+#     - davidanson.vscode-markdownlint
+#   when: code_exist.rc == 0

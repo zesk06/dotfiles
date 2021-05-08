@@ -1,0 +1,4 @@
+---
+username: rouviere
+usermail: nicolas.rouviere@airbus.com
+ansible_python_interpreter: /usr/bin/python2

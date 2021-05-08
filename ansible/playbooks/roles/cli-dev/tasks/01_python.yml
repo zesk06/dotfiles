@@ -1,0 +1,15 @@
+---
+#- name: check ~/.pyenv
+#  stat:
+#    path: ~/.pyenv
+#  register: stat_pyenv
+#
+#- name: clone pyenv
+#  git:
+#    repo: https://github.com/pyenv/pyenv.git 
+#    dest: ~/.pyenv
+#  when: stat_pyenv.stat.exists == False
+#
+#- name: install pyenv
+#  debug: msg="YET TO BE IMPLEMENTED - faut appeler"
+#

@@ -1,0 +1,35 @@
+---
+- name: install DEV packages
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+      # those package permits to install
+    - cmake
+    - conky
+    - ctags-etags
+    - dmenu
+    - exa
+    - gcc-c++
+    - git
+    - gitk
+    - i3 
+    - i3lock
+    - i3status
+    - libffi-devel
+    - libselinux-python
+    - make
+    - neovim
+    - openssl-devel
+    - python-virtualenvwrapper
+    - python2-devel
+    - python3-devel
+    - stow
+    - the_silver_searcher
+    - vim-enhanced
+    - xbacklight
+    - zlib-devel
+    - zsh
+
+    
+

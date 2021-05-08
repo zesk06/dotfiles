@@ -1,0 +1,17 @@
+---
+- name: install docker.repo
+  copy:
+    src: docker.repo
+    dest: /etc/yum.repos.d/docker.repo
+- name: install docker-ce
+  yum: name=docker-ce state=latest
+  notify:
+    - restart docker
+- name: create docker group
+  group: name=docker state=present
+
+- name: "add {{ username }} to docker group"
+  user:
+    name: "{{ username }}"
+    groups: docker
+    append: yes

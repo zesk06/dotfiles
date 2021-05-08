@@ -1,0 +1,25 @@
+---
+# - name: check ~/.pyenv
+#   stat:
+#     path: ~/.pyenv
+#   register: stat_pyenv
+# 
+# - name: clone pyenv
+#   git:
+#     repo: https://github.com/pyenv/pyenv.git 
+#     dest: ~/.pyenv
+#   when: stat_pyenv.stat.exists == False
+# 
+# - name: instal pyenv virtualenv plugin
+#   git:
+#     repo: https://github.com/pyenv/pyenv-virtualenvwrapper.git 
+#     dest: ~/.pyenv/plugins/pyenv-virtualenvwrapper
+# 
+# - name: install pyenv
+#   debug: msg="YET TO BE IMPLEMENTED - faut appeler"
+# 
+# - name: create ~/.ipython/profile_default folder
+#   file: 
+#     dest: ~/.ipython/profile_default
+#     state: directory
+# 
